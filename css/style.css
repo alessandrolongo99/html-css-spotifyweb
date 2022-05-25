@@ -29,7 +29,10 @@ main{
 
 .side-bar{
     background-color: black;
-    width: 200px;
+    width: 250px;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo{
@@ -54,6 +57,10 @@ a.button{
     border-left: 2px solid #adff2f;
 }
 
+.playlist{
+    flex-direction: column;
+}
+
 .playlist h4{
     padding: 6px;
     margin-top: 1rem;
@@ -76,12 +83,24 @@ a.button{
 
 .list{
     overflow: auto;
+    /* min-height: 100px; */
+    flex-grow: 1;
 }
 
 .list div{
     margin: 1rem 6px;
 }
 
+hr{
+    margin: 6px;
+}
+
+.profile img{
+    border-radius: 50%;
+    background-color: grey;
+}
+
+/* transparent */
 .transparent{
     height: 70px;
     background-color: rgba(0, 0, 0, 0.5);
