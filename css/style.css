@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.flex-container{
+    display: flex;
+}
+
+
+/* main */
+main{
+    height: calc(100vh - 100px);
+}
+
+.main{
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: #141922;
+}
+
+.side-bar{
+    background-color: black;
+    width: 200px;
+}
+
+.transparent{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* footer */
+footer{
+    height: 100px;
+    background-color: #282828;
+}
+
+/* xs */
+@media screen and (max-width: 600px) {
+    
+}
+
+/* s */
+@media screen and (min-width: 601px) and (max-width: 700px){
+    
+}
+
+/* md */
+@media screen and (min-width: 701px) and (max-width: 1100px){
+    
+}
+
+/* lg */
+@media screen and (min-width: 1101px){
+    
+}
