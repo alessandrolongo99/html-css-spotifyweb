@@ -147,7 +147,7 @@ nav{
 nav a{
     text-decoration: none;
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 .recent, .created-for, .artists{
@@ -243,9 +243,10 @@ footer > div.flex-container{
 
 .player-right{
     justify-content: right;
+    margin-right: 10px;
 }
 
-.player-right *{
+.player-right i{
     margin: 10px;
 }
 
@@ -257,9 +258,17 @@ footer > div.flex-container{
     border-radius: 40px;
 }
 
-/* xs */
-@media screen and (max-width: 600px) {
-    
+/* md */
+@media screen and (min-width: 701px) and (max-width: 1100px){
+    .recent{
+        flex-wrap: wrap;
+    }
+
+    .album{
+        width: calc(100% / 4);
+        max-width: 200px;
+        flex-grow: 1;
+    }
 }
 
 /* s */
@@ -267,12 +276,7 @@ footer > div.flex-container{
     
 }
 
-/* md */
-@media screen and (min-width: 701px) and (max-width: 1100px){
-    
-}
-
-/* lg */
-@media screen and (min-width: 1101px){
+/* xs */
+@media screen and (max-width: 600px) {
     
 }
