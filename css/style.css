@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    color: white;
+    color: #a3a3a3;
 }
 
 .flex-container{
@@ -15,22 +15,23 @@ img{
     width: 100%;
 }
 
-
 /* main */
 main{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
+    width: 100%;
 }
 
 .main{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     width: 100%;
     background-color: #141922;
+    overflow: auto;
 }
 
 .side-bar{
     background-color: black;
     width: 250px;
-    overflow: auto;
+    overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -82,9 +83,7 @@ a.button{
 }
 
 .list{
-    overflow: auto;
-    /* min-height: 100px; */
-    flex-grow: 1;
+    overflow-y: scroll;
 }
 
 .list div{
@@ -103,6 +102,7 @@ hr{
 /* transparent */
 .transparent{
     height: 70px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: flex-end;
     align-items: center;
@@ -116,10 +116,113 @@ hr{
     border: 1px solid white;
 }
 
+/* squares */
+.content{
+    flex-direction: column;
+}
+
+.squares{
+    margin: 1rem;
+}
+
+section{
+    margin-top: 1rem;
+}
+
+nav{
+    margin: 1rem auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.recent, .created-for, .artists{
+    gap: 1rem;
+}
+
+.album{
+    width: calc(100% / 6);
+    max-width: 200px;
+    flex-grow: 1;
+}
+
+.album div{
+    text-align: center;
+    margin: 1rem;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.created-for-title{
+    margin-top: 2rem;
+}
+
+.subtitle{
+    margin-top: 1rem;
+}
+
 /* footer */
 footer{
-    height: 100px;
+    height: 90px;
     background-color: #282828;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    height: 50px;
+    width: 50px;
+    margin: 1rem;
+}
+
+footer > div.flex-container{
+    align-items: center;
+}
+
+.name-song{
+    font-size: 14px;
+}
+
+.track{
+    font-size: 12px;
+}
+
+.player-left i{
+    margin: 5px;
+}
+
+.player-center{
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-center i{
+    margin: 1rem;
+}
+
+.time-line{
+    width: 500px;
+    background-color: gray;
+    height: 3px;
+    border-radius: 40px;
+}
+
+.player-right *{
+    margin: 10px;
+}
+
+.volume-line{
+    width: 100px;
+    background-color: gray;
+    height: 3px;
+    border-radius: 40px;
 }
 
 /* xs */
