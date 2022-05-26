@@ -1,187 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Spotify</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-</head>
-<body>
-    <main class="flex-container">
-        <div class="side-bar flex-container">
-            <div class="top-bar">
-                <img src="./img/logo.svg" alt="logo" class="logo">
-                <div class="home">
-                    <a href="#" class="button flex-container fluo">
-                        <img src="./img/home.svg" alt="home" class="icon-home">
-                        <span class="bold">Home</span>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Spotify</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    </head>
+    <body>
+        <main class="flex-container">
+            <div class="side-bar flex-container">
+                <div class="top-bar">
+                    <img src="./img/logo.svg" alt="logo" class="logo">
+                    <div class="home">
+                        <a href="#" class="button flex-container fluo">
+                            <img src="./img/home.svg" alt="home" class="icon-home">
+                            <span class="bold">Home</span>
+                        </a>
+                        <a href="#" class="button flex-container">
+                            <img src="./img/search.svg" alt="search" class="icon-home">
+                            <span>Cerca</span>
+                        </a>
+                        <a href="#" class="button flex-container">
+                            <img src="./img/libreria.svg" alt="libreria" class="icon-home">
+                            <span>La tua libreria</span>
+                        </a>
+                    </div>
+                    <div class="playlist flex-container">
+                        <h4>PLAYLIST</h4>
+                        <a href="#" class="button flex-container">
+                            <div class="plus">+</div>
+                            <span>Crea Playlist</span>
+                        </a>
+                        <div class="list">
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <a href="#" class="button app-download flex-container">
+                        <img src="./img/download.svg" alt="download" class="icon-home">
+                        <span>Installa app</span>
                     </a>
-                    <a href="#" class="button flex-container">
-                        <img src="./img/search.svg" alt="search" class="icon-home">
-                        <span>Cerca</span>
-                    </a>
-                    <a href="#" class="button flex-container">
-                        <img src="./img/libreria.svg" alt="libreria" class="icon-home">
-                        <span>La tua libreria</span>
+                    <hr>
+                    <a href="#" class="button profile flex-container">
+                        <img src="./img/profile.svg" alt="download" class="icon-home">
+                        <span class="bold">John Doe</span>
                     </a>
                 </div>
-                <div class="playlist flex-container">
-                    <h4>PLAYLIST</h4>
-                    <a href="#" class="button flex-container">
-                        <div class="plus">+</div>
-                        <span>Crea Playlist</span>
-                    </a>
-                    <div class="list">
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
+            </div>
+            <div class="hidden-side">
+                <div class="top-hidden">
+                    <img src="./img/logo-small.svg" alt="logo-small">
+                    <img src="./img/home.svg" alt="home">
+                    <img src="./img/search.svg" alt="search">
+                    <img src="./img/libreria.svg" alt="libreria">
+                </div>
+                <div class="bot-hidden">
+                    <img src="./img/download.svg" alt="download">
+                    <img src="./img/profile.svg" alt="profile" class="profile-hidden">
+                </div>
+            </div>
+            <div class="main">
+                <div class="transparent flex-container">
+                    <a href="#" class="upgrade bold">EFFETTUA L'UPGRADE</a>
+                </div>
+                <div class="flex-container content">
+                    <nav class="flex-container">
+                        <a href="#">IN EVIDENZA</a>
+                        <a href="#">PODCAST</a>
+                        <a href="#">CLASSIFICHE</a>
+                        <a href="#">GENERI E MOOD</a>
+                        <a href="#">NUOVE USCITE</a>
+                        <a href="#">SCOPRI</a>
+                    </nav>
+                    <div class="squares">
+                        <h2>Recently played</h2>
+                        <section class="recent flex-container">
+                            <div class="album">
+                                <div class="container">
+                                    <img src="./img/metal_lifting.jpg" alt="metal_lifting" class="hover">
+                                    <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">Heavy Metal</div>
+                                <div class="sub info">subtitle</div>
+                            </div>
+                            <div class="album">
+                                <div class="container">
+                                    <img src="./img/stranger.jpeg" alt="stranger">
+                                    <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</div>
+                                <div class="sub info">Kyle Dixon & Michael Stein</div>
+                            </div>
+                            <div class="album">
+                                <div class="container">
+                                    <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                    <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">A quiet place</div>
+                                <div class="sub info">subtitle</div>
+                            </div>
+                            <div class="album">
+                                <div class="container">
+                                    <img src="./img/split.jpeg" alt="split">
+                                    <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">Split</div>
+                                <div class="sub info">subtitle</div>
+                            </div>
+                            <div class="album">
+                                <div class="container">
+                                    <img src="./img/cure.jpeg" alt="cure">
+                                    <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">A cure fot wellness</div>
+                                <div class="sub info">subtitle</div>
+                            </div>
+                            <div class="album">
+                                <div class="container">
+                                    <img src="./img/sinister.jpeg" alt="sinister">
+                                    <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">Sinister</div>
+                                <div class="sub info">subtitle</div>
+                            </div>
+
+                        </section>
+                        <h2 class="created-for-title">Crato per John Doe</h2>
+                        <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
+                        <section class="created-for flex-container">
+                            <div class="album max">
+                                <div class="container">
+                                    <img src="./img/radar.jpeg" alt="radar">
+                                    <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">Release Radar</div>
+                            </div>
+                            <div class="album max">
+                                <div class="container">
+                                    <img src="./img/mixdaily.jpeg" alt="mixdaily">
+                                    <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">Daily Mix 1</div>
+                            </div>
+                        </section>
+                        <h2 class="created-for-title">Artisti più popolari</h2>
+                        <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
+                        <section class="artists flex-container">
+                            <div class="album max">
+                                <div class="container">
+                                    <img src="./img/youg.jpeg" alt="youg" class="round">
+                                    <div class="overlay-round"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">Lana del Rey</div>
+                            </div>
+                            <div class="album max">
+                                <div class="container">
+                                    <img src="./img/einaudi.jpeg" alt="einaudi" class="round">
+                                    <div class="overlay-round"><i class="fa-regular fa-circle-play"></i></div>
+                                </div>
+                                <div class="name info">Ludovico Einaudi</div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-            <div class="user">
-                <a href="#" class="button app-download flex-container">
-                    <img src="./img/download.svg" alt="download" class="icon-home">
-                    <span>Installa app</span>
-                </a>
-                <hr>
-                <a href="#" class="button profile flex-container">
-                    <img src="./img/profile.svg" alt="download" class="icon-home">
-                    <span class="bold">John Doe</span>
-                </a>
-            </div>
-        </div>
-        <div class="hidden-side">
-            <div class="top-hidden">
-                <img src="./img/logo-small.svg" alt="logo-small">
-                <img src="./img/home.svg" alt="home">
-                <img src="./img/search.svg" alt="search">
-                <img src="./img/libreria.svg" alt="libreria">
-            </div>
-            <div class="bot-hidden">
-                <img src="./img/download.svg" alt="download">
-                <img src="./img/profile.svg" alt="profile" class="profile-hidden">
-            </div>
-        </div>
-        <div class="main">
-            <div class="transparent flex-container">
-                <a href="#" class="upgrade bold">EFFETTUA L'UPGRADE</a>
-            </div>
-            <div class="flex-container content">
-                <nav class="flex-container">
-                    <a href="#">IN EVIDENZA</a>
-                    <a href="#">PODCAST</a>
-                    <a href="#">CLASSIFICHE</a>
-                    <a href="#">GENERI E MOOD</a>
-                    <a href="#">NUOVE USCITE</a>
-                    <a href="#">SCOPRI</a>
-                </nav>
-                <div class="squares">
-                    <h2>Recently played</h2>
-                    <section class="recent flex-container">
-                        <div class="album">
-                            <img src="./img/metal_lifting.jpg" alt="metal_lifting">
-                            <div class="name">Heavy Metal</div>
-                            <div class="sub">subtitle</div>
-                        </div>
-                        <div class="album">
-                            <img src="./img/stranger.jpeg" alt="stranger">
-                            <div class="name">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</div>
-                            <div class="sub">Kyle Dixon & Michael Stein</div>
-                        </div>
-                        <div class="album">
-                            <img src="./img/aquietplace.jpeg" alt="aquietplace">
-                            <div class="name">A quiet place</div>
-                            <div class="sub">subtitle</div>
-                        </div>
-                        <div class="album">
-                            <img src="./img/split.jpeg" alt="split">
-                            <div class="name">Split</div>
-                            <div class="sub">subtitle</div>
-                        </div>
-                        <div class="album">
-                            <img src="./img/cure.jpeg" alt="cure">
-                            <div class="name">A cure fot wellness</div>
-                            <div class="sub">subtitle</div>
-                        </div>
-                        <div class="album">
-                            <img src="./img/sinister.jpeg" alt="sinister">
-                            <div class="name">Sinister</div>
-                            <div class="sub">subtitle</div>
-                        </div>
-
-                    </section>
-                    <h2 class="created-for-title">Crato per John Doe</h2>
-                    <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
-                    <section class="created-for flex-container">
-                        <div class="album max">
-                            <img src="./img/radar.jpeg" alt="radar">
-                            <div class="name">Release Radar</div>
-                        </div>
-                        <div class="album max">
-                            <img src="./img/mixdaily.jpeg" alt="mixdaily">
-                            <div class="name">Daily Mix 1</div>
-                        </div>
-                    </section>
-                    <h2 class="created-for-title">Artisti più popolari</h2>
-                    <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
-                    <section class="artists flex-container">
-                        <div class="album max">
-                            <img src="./img/youg.jpeg" alt="youg" class="round">
-                            <div class="name">Lana del Rey</div>
-                        </div>
-                        <div class="album max">
-                            <img src="./img/einaudi.jpeg" alt="einaudi" class="round">
-                            <div class="name">Ludovico Einaudi</div>
-                        </div>
-                    </section>
+        </main>
+        <footer class="flex-container">
+            <div class="player flex-container">
+                <img src="./img/sinister.jpeg" alt="sinister">
+                <div>
+                    <div class="name-song bold">Sinister</div>
+                    <div class="track">Brano Nome</div>
+                </div>
+                <div class="player-left">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer class="flex-container">
-        <div class="player flex-container">
-            <img src="./img/sinister.jpeg" alt="sinister">
-            <div>
-                <div class="name-song bold">Sinister</div>
-                <div class="track">Brano Nome</div>
+            <div class="player player-center flex-container">
+                <div class="controls">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="time-bar flex-container">
+                    <div class="time">0:25</div>
+                    <div class="time-line">
+                        <div class="inner-line"></div>
+                    </div>
+                    <div class="time">4:35</div>
+                </div>
             </div>
-            <div class="player-left">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
-            </div>
-        </div>
-        <div class="player player-center flex-container">
-            <div class="controls">
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-arrow-rotate-right"></i>
-            </div>
-            <div class="time-bar flex-container">
-                <div class="time">0:25</div>
-                <div class="time-line">
+            <div class="player player-right flex-container">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-tv"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-line">
                     <div class="inner-line"></div>
                 </div>
-                <div class="time">4:35</div>
             </div>
-        </div>
-        <div class="player player-right flex-container">
-            <i class="fa-solid fa-list"></i>
-            <i class="fa-solid fa-tv"></i>
-            <i class="fa-solid fa-volume-high"></i>
-            <div class="volume-line">
-                <div class="inner-line"></div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+        </footer>
+    </body>
+    </html>

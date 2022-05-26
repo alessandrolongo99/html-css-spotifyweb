@@ -32,6 +32,66 @@ h2, h4{
     display: none;
 }
 
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+}
+
+.overlay-round{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.container:hover .overlay{
+    opacity: 0.5;
+}
+
+.container:hover .overlay-round{
+    opacity: 0.5;
+}
+
+.overlay i{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-round i{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 /* main */
 main{
     height: calc(100vh - 90px);
@@ -187,7 +247,7 @@ nav a{
     max-width: 200px;
 }
 
-.album div{
+.album .info{
     text-align: center;
     margin: 1rem 0;
 }
