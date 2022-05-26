@@ -82,9 +82,9 @@ a.button{
     margin: 3px;
 }
 
-.list{
+/* .list{
     overflow-y: scroll;
-}
+} */
 
 .list div{
     margin: 1rem 6px;
@@ -176,6 +176,10 @@ footer{
     align-items: center;
 }
 
+.player{
+    width: calc(100% / 3);
+}
+
 footer img{
     height: 50px;
     width: 50px;
@@ -204,14 +208,30 @@ footer > div.flex-container{
 }
 
 .player-center i{
-    margin: 1rem;
+    margin: 10px;
 }
 
 .time-line{
-    width: 500px;
+    width: 100%;
     background-color: gray;
     height: 3px;
     border-radius: 40px;
+    cursor: pointer;
+}
+
+.inner-line{
+    width: 30%;
+    background-color: grey;
+    height: 3px;
+    border-radius: 40px;
+}
+
+.inner-line:hover{
+    background-color: #adff2f;
+}
+
+.player-right{
+    justify-content: right;
 }
 
 .player-right *{
@@ -219,7 +239,8 @@ footer > div.flex-container{
 }
 
 .volume-line{
-    width: 100px;
+    cursor: pointer;
+    width: 20%;
     background-color: gray;
     height: 3px;
     border-radius: 40px;
