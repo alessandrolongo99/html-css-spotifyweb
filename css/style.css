@@ -6,6 +6,11 @@
     color: #a3a3a3;
 }
 
+.bold{
+    font-weight: bold;
+    color: white;
+}
+
 .flex-container{
     display: flex;
 }
@@ -13,6 +18,10 @@
 img{
     display: block;
     width: 100%;
+}
+
+h2{
+    color: white;
 }
 
 /* main */
@@ -153,11 +162,12 @@ nav a{
 
 .album div{
     text-align: center;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .name{
     font-weight: bold;
+    color: white;
 }
 
 .created-for-title{
@@ -209,6 +219,7 @@ footer > div.flex-container{
 
 .player-center i{
     margin: 10px;
+    color: white;
 }
 
 .time-line{
